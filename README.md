@@ -10,7 +10,7 @@ Built using:
 
 ### [Live Site](https://joby-aviation-coding-challenge.netlify.app/)
 
-![App]()
+![App](https://github.com/Majd-sufian/joby-aviation-coding-challenge/blob/master/picture1.png?raw=true)
 
 ## Scripts:
 
