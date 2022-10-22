@@ -1,0 +1,139 @@
+hr {
+  margin: 1rem 0;
+}
+
+.overlay {
+  /* background-color: rgba(0, 0, 0, 0.5); */
+  position: fixed;
+  width: 100%;
+  height: 100%;
+}
+
+.modalContainer {
+  max-width: 80rem;
+  width: 100%;
+  position: fixed;
+  top: 50%;
+  left: 53%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  background-color: #f3f4f5;
+  border-radius: 8px;
+  color: #656c80;
+}
+
+.Modal__header {
+  justify-content: space-between;
+  background: #c9cdd5;
+  border-radius: 4px 4px 0px 0px;
+}
+
+.Modal__header__closeBtn {
+  margin: 1rem;
+}
+
+.Modal__header__title {
+  padding: 1rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1rem 2rem;
+}
+
+.details {
+  flex: 1;
+}
+
+.datails__items {
+  flex-wrap: wrap;
+}
+
+.datails__items > div {
+  width: 18rem;
+  margin-bottom: 2rem;
+}
+
+.datails__items span {
+  color: black;
+}
+
+.process {
+  text-align: left;
+  flex: 1;
+}
+
+.process__items .item {
+  margin-bottom: 1rem;
+}
+
+.process__items .item :first-child {
+  width: 11rem;
+}
+
+.process__items .item :nth-child(2) {
+  color: black;
+}
+
+.Modal__priority span {
+  width: 6rem;
+  font-size: 0.8rem;
+  text-align: center;
+  margin-top: 0.5rem;
+}
+
+.files span {
+  font-size: 0.66rem;
+  font-weight: 700;
+  position: relative;
+  bottom: 0.5rem;
+}
+
+.deparments__buttons > button {
+  background: white;
+  border-radius: 12px;
+  padding: 0.5rem;
+  margin-bottom: 0.8rem;
+  color: #51565e;
+  border: none;
+}
+
+.secondary__button {
+  background: #006bd1 !important;
+  color: white !important;
+}
+
+.files__list {
+  background: white;
+  margin: 2rem 2rem 0rem;
+  border-radius: 12px;
+  height: 18rem;
+  flex: 1;
+  overflow: scroll;
+  padding: 0rem 1rem;
+}
+
+.file__card {
+  padding: 1rem;
+  border-bottom: 1px solid #d9d9d9;
+  gap: 1rem;
+}
+
+.file__image {
+  background: #d9d9d9;
+  width: 8rem;
+  height: 8rem;
+}
+
+.file__details {
+  flex: 1;
+}
+
+.file__name__date {
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}

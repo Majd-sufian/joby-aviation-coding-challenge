@@ -1,0 +1,16 @@
+.List {
+  background: #ffffff;
+  height: fit-content;
+  color: black;
+}
+
+.List__title {
+  padding: 0.6rem;
+  background-color: #60687c;
+  border-radius: 12px 12px 0px 0px;
+  color: #e6e7ea;
+}
+
+.List__cards {
+  padding: 0.5rem 1rem;
+}

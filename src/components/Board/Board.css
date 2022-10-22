@@ -1,0 +1,31 @@
+.Board__container {
+  padding-right: 3rem;
+}
+
+.Board__title {
+  margin-left: 3rem;
+  color: #7b7c89;
+  font-weight: 500;
+}
+
+.Board__content {
+  color: white;
+  background: rgba(46, 49, 56, 0.8);
+  gap: 2rem;
+  padding: 1rem 2rem;
+}
+
+.cretical {
+  background-color: #f8e1dd;
+  color: #ff3716;
+}
+
+.high {
+  background-color: #f5eddb;
+  color: #d19b16;
+}
+
+.standard {
+  background-color: #dcf0dc;
+  color: #07ba07;
+}

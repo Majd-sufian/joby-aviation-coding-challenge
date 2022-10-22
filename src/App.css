@@ -1,0 +1,25 @@
+.App__container {
+  height: 100vh;
+  padding: 1rem 0.5rem;
+  gap: 4rem;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.radius {
+  border-radius: 18px;
+}
+
+.flex {
+  display: flex;
+}
+
+.column {
+  flex-direction: column;
+}
+
+.row {
+  flex-direction: row;
+}

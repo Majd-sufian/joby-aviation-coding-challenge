@@ -1,0 +1,13 @@
+body,
+html {
+  height: 100%;
+  margin: 0;
+  background: url("https://www.cnet.com/a/img/resize/55b1f6be51bc0e8baa0055b967af51ecb6832e02/hub/2021/03/16/852959df-118c-4514-b8a9-7ded970c528d/joby-aviation-aircraft-2-1.jpg?auto=webp&width=1200")
+    no-repeat center center fixed;
+  background-size: cover;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
