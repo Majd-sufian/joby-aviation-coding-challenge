@@ -34,7 +34,8 @@
 }
 
 .List__cards,
-[data-rbd-droppable-context-id="1"] {
+[data-rbd-droppable-context-id="1"],
+[data-rbd-droppable-context-id="0"] {
   padding: 0.5rem 1rem;
 }
 
