@@ -1,6 +1,6 @@
 import { Priority } from "../types";
 
-const getOrderName = () => {
+const getOrderTitle = () => {
   return "MO" + Math.floor(10000000 + Math.random() * 90000000);
 };
 
@@ -17,6 +17,29 @@ const getPriorityStatus = (): Priority => {
     "Standard",
   ];
   return status[index];
+};
+
+const getRandomId = () => {
+  const s4 = () => {
+    return Math.floor((1 + Math.random()) * 0x10000)
+      .toString(16)
+      .substring(1);
+  };
+  //return id of format 'aaaaaaaa'-'aaaa'-'aaaa'-'aaaa'-'aaaaaaaaaaaa'
+  return (
+    s4() +
+    s4() +
+    "-" +
+    s4() +
+    "-" +
+    s4() +
+    "-" +
+    s4() +
+    "-" +
+    s4() +
+    s4() +
+    s4()
+  );
 };
 
 const orderDeatils = {
@@ -60,7 +83,8 @@ export const getCards = (n: number) => {
   const cards = [];
   for (let i = 0; i < n; i++) {
     cards.push({
-      name: getOrderName(),
+      id: getRandomId(),
+      title: getOrderTitle(),
       description: "Order Description",
       priority: getPriorityStatus(),
       date: getRandomDate(),

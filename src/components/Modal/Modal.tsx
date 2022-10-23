@@ -7,7 +7,7 @@ import { ModalDetails, ModalFiles } from "../subComponents";
 interface ModalProps {
   open: boolean;
   onClose: () => void;
-  name: string;
+  title: string;
   priority: Priority;
   orderDeatils: OrderDeatils;
   procesDeatails: ProcessDeatails;
@@ -17,7 +17,7 @@ interface ModalProps {
 const Modal: React.FC<ModalProps> = ({
   open,
   onClose,
-  name,
+  title,
   priority,
   orderDeatils,
   procesDeatails,
@@ -33,7 +33,7 @@ const Modal: React.FC<ModalProps> = ({
         className="modalContainer flex column"
       >
         <div className="Modal__header flex row">
-          <div className="Modal__header__title">{name}</div>
+          <div className="Modal__header__title">{title}</div>
           <div className="Modal__header__closeBtn pointer" onClick={onClose}>
             <CancelRoundedIcon />
           </div>

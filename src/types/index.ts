@@ -1,10 +1,16 @@
-export interface List {
+export interface Board {
+  columns: Array<Columns>;
+}
+
+interface Columns {
+  id: number | string;
   title: string;
   cards: Array<Card>;
 }
 
 export interface Card {
-  name: string;
+  id: string;
+  title: string;
   description: string;
   priority: Priority;
   date: string;

@@ -1,5 +1,5 @@
-import Board from "./Board/Board";
+import ControlledBoard from "./Board/Board";
 import Sidebar from "./Sidebar/Sidebar";
 import Modal from "./Modal/Modal";
 
-export { Board, Sidebar, Modal };
+export { ControlledBoard, Sidebar, Modal };

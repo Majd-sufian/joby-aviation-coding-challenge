@@ -2,7 +2,6 @@ import { useState } from "react";
 import { Modal } from "../..";
 import { getClassName } from "../../../utils";
 import { Card } from "../../../types";
-import "./ListCard.css";
 
 interface ListCardProps {
   card: Card;
@@ -14,10 +13,10 @@ const ListCard: React.FC<ListCardProps> = ({ card }) => {
   return (
     <>
       <div
-        className="List__card flex column radius pointer"
+        className="List__card flex column radius"
         onClick={() => setOpenModal(true)}
       >
-        <div className="List__card__name">{card.name}</div>
+        <div className="List__card__name">{card.title}</div>
         <div className="List__card__description">{card.description}</div>
         <hr />
 
@@ -34,7 +33,7 @@ const ListCard: React.FC<ListCardProps> = ({ card }) => {
       <Modal
         open={openModal}
         onClose={() => setOpenModal(false)}
-        name={card.name}
+        title={card.title}
         priority={card.priority}
         orderDeatils={card.orderDeatils}
         procesDeatails={card.processDeatails}
